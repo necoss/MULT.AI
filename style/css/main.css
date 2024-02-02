@@ -578,6 +578,7 @@
   }
   .m-main .demo #canvas {
     width: 250px;
+    height: 200px;
   }
   .m-main .join-us {
     margin-top: calc(var(--index) * 10);

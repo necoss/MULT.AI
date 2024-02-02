@@ -85,7 +85,7 @@ const detectAllPoints = async () => {
 
     mainVideo.style.display = 'block';
     
-    if(!window.innerWidth < 600){
+    if(window.innerWidth >= 600){
       canvas.style.display = 'block'
     }
     
