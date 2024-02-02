@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MULT.AI - Передовой проект по созданию интерактивных мультфильмов для детей</title>
+  <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
+<!-- CSS -->
+  <link rel="stylesheet" href="./style/css/main.css">
+<!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="m-body">
+  <header class="m-header header">
+    <div class="container">
+
+      <nav class="navigation">
+        <ul class="nav-logo">
+          <a href="./index.html"><img src="./src/images/logo.png" alt=""></a>
+        </ul>
+        <ul class="nav-list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Цены</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Персонажи</a></li>
+        </ul>
+        <ul class="nav-login">
+          <a href="#" class="nav-login__button">Войти</a>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="m-main main">
+    <div class="container">
+      <section class="hero-section">
+        <article class="hero-text">
+          <h1 class="hero-text__header">MULT<span class="dot-colored">.</span>AI</h1>
+          <p class="hero-text__descr">Будущее уже наступило</p>
+        </article>
+
+        <div class="hero-quote">
+          <p class="hero-quote__text">
+            “Будущее детских мультфильмов стоит за нами. Мы создаем именно тот продукт, который каждый родитель захочет приобрести уже сегодня“
+          </p>
+          <div class="hero-quote__author">
+
+          </div>
+        </div>
+
+        <img src="./src/images/learn-more.svg" alt="Изучить больше" class="hero-learn-more">
+
+      </section>
+
+      <section class="goals">
+
+        <div class="goals-text">
+          <h2 class="goals-text__header">Наша цель</h2>
+          <p class="goals-text__descr">В наши дни детская мультипликация заставляет детей сидеть напротив телевизора или же планшета и просто потреблять различный контент. Дети стали более пассивными: меньше двигаются, более ленивы. А что если с самого детства им развивать привычку не просто смотреть что-то, а еще и двигаться? Что если ребенок с раннего возраста будет не просто смотреть на то, что для него сделали аниматоры, а непостредственно принимать в этом участие? Что если ребенок будет главным героем в каждом мультике, который он смотрит? Мы нашли ответы на эти вопросы. Мы компания MULT.AI призваны устранить современную проблему... и так далее короче</p>
+          <a href="#" class="goals-text__button">Познакомиться с MULT.AI</a>
+        </div>
+
+        <video src="./src/video/model1.mkv" width="500px" class="goals-model" autoplay loop muted></video>
+
+      </section>
+
+      <section class="tutorial">
+        <article class="tutorial-article">
+          <h3 class="tutorial-title">Как же посмотреть наши мультики?</h3>
+          <p class="tutorial-article__subtitle">Это проще простого, всего лишь выполните эти три шага</p>
+        </article>
+
+        <div class="tutorial-cards">
+          <div class="tutorial-cards__card">
+            <img src="./src/images/tutorial/user.svg" alt="">
+            <h4 class="tutorial-cards__card__title">Войдите в аккаунт</h4>
+            <p class="tutorial-cards__card__descr">Процесс создания аккаунта <span>невероятно прост</span>! Вам нужно всего лишь зарегистрироваться любым удобным вам способом!</p>
+          </div>
+
+          <div class="tutorial-cards__card">
+            <img src="./src/images/tutorial/movie-fill.svg" alt="">
+            <h4 class="tutorial-cards__card__title">Выбираете мультфильм</h4>
+            <p class="tutorial-cards__card__descr">Выбираете любой понравившийся мультфильм с вашим любимым персонажем из <span>нашей коллекции</span></p>
+          </div>
+
+          <div class="tutorial-cards__card">
+            <img src="./src/images/tutorial/play.svg" alt="">
+            <h4 class="tutorial-cards__card__title">Попадаете в мир MULT.AI</h4>
+            <p class="tutorial-cards__card__descr">Поздравляем! Теперь вы можете стать <span>главным героем</span> именно того мультфильма, который вам нравится!</p>
+          </div>
+        </div>
+
+        <a href="#" class="tutorial-button">Попробовать демо</a>
+      </section>
+
+      <section class="demo">
+        <h4 class="demo__title">Попробуйте демо-версию нашего продукта!</h4>
+        <div class="demo__iframe">
+          <canvas id="canvas">
+          </canvas>
+          <button id="startgame_btn">Начать игру</button>
+          <video id="video" autoplay></video>
+          <video id="mainVideo" autoplay preload></video>
+          <div id="loader" class="loadingio-spinner-double-ring-05qdriyhpqgw">
+              <div class="ldio-bkciyf8mibg">
+                  <div></div>
+                  <div></div>
+                  <div><div></div>
+                  </div>
+                  <div><div></div></div>
+              </div>
+          </div>
+              <style type="text/css">
+              @keyframes ldio-bkciyf8mibg {
+                0% { transform: rotate(0) }
+                100% { transform: rotate(360deg) }
+              }
+              .ldio-bkciyf8mibg div { box-sizing: border-box!important }
+              .ldio-bkciyf8mibg > div {
+                position: absolute;
+                width: 144px;
+                height: 144px;
+                top: 28px;
+                left: 28px;
+                border-radius: 50%;
+                border: 16px solid #000;
+                border-color: #ffab07 transparent #ffab07 transparent;
+                animation: ldio-bkciyf8mibg 1s linear infinite;
+              }
+              
+              .ldio-bkciyf8mibg > div:nth-child(2), .ldio-bkciyf8mibg > div:nth-child(4) {
+                width: 108px;
+                height: 108px;
+                top: 46px;
+                left: 46px;
+                animation: ldio-bkciyf8mibg 1s linear infinite reverse;
+              }
+              .ldio-bkciyf8mibg > div:nth-child(2) {
+                border-color: transparent #ffd071 transparent #ffd071
+              }
+              .ldio-bkciyf8mibg > div:nth-child(3) { border-color: transparent }
+              .ldio-bkciyf8mibg > div:nth-child(3) div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: rotate(45deg);
+              }
+              .ldio-bkciyf8mibg > div:nth-child(3) div:before, .ldio-bkciyf8mibg > div:nth-child(3) div:after { 
+                content: "";
+                display: block;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                top: -16px;
+                left: 48px;
+                background: #ffab07;
+                border-radius: 50%;
+                box-shadow: 0 128px 0 0 #ffab07;
+              }
+              .ldio-bkciyf8mibg > div:nth-child(3) div:after {
+                left: -16px;
+                top: 48px;
+                box-shadow: 128px 0 0 0 #ffab07;
+              }
+              
+              .ldio-bkciyf8mibg > div:nth-child(4) { border-color: transparent; }
+              .ldio-bkciyf8mibg > div:nth-child(4) div {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: rotate(45deg);
+              }
+              .ldio-bkciyf8mibg > div:nth-child(4) div:before, .ldio-bkciyf8mibg > div:nth-child(4) div:after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                top: -16px;
+                left: 30px;
+                background: #ffd071;
+                border-radius: 50%;
+                box-shadow: 0 92px 0 0 #ffd071;
+              }
+              .ldio-bkciyf8mibg > div:nth-child(4) div:after {
+                left: -16px;
+                top: 30px;
+                box-shadow: 92px 0 0 0 #ffd071;
+              }
+              .loadingio-spinner-double-ring-05qdriyhpqgw {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);  
+                width: 200px;
+                height: 200px;
+                display: block;
+                overflow: hidden;
+                background: transparent;
+              }
+              .ldio-bkciyf8mibg {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transform: translateZ(0) scale(1);
+                backface-visibility: hidden;
+                transform-origin: 0 0;
+              }
+              .ldio-bkciyf8mibg div { box-sizing: content-box; }
+              </style>
+        </div>
+
+      </section>
+
+      <section class="join-us">
+        <video src="src/video/model2.mkv" class="join-video" autoplay loop muted></video>
+
+        <div class="join-content">
+          <p class="join-content__subtitle">Дорогой пользователь</p>
+          <h5 class="join-content__title">Мы ждем именно <span>вас</span>!</h5>
+          <a href="" class="join-content__button">Стать частью одной большой вселенной!</a>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-detection"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/hand-pose-detection"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
