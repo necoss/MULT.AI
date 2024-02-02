@@ -28,6 +28,10 @@
   align-items: center;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .container {
   padding: 0 calc(var(--index) * 25);
 }
