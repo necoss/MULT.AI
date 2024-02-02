@@ -84,7 +84,10 @@ const detectAllPoints = async () => {
     loader.remove();
 
     mainVideo.style.display = 'block';
-    canvas.style.display = 'block';
+    
+    if(!window.innerWidth < 600){
+      canvas.style.display = 'block'
+    }
     
     
     const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);

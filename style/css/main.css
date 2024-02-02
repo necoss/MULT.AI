@@ -576,6 +576,9 @@
     background-color: var(--accent-color);
     font-family: "Montserrat";
   }
+  .m-main .demo #canvas {
+    width: 250px;
+  }
   .m-main .join-us {
     margin-top: calc(var(--index) * 10);
   }
