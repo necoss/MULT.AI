@@ -29,6 +29,16 @@ allVideos.forEach((video) => {
     })
 })
 
+
+
+window.addEventListener('orientationchange', function() {
+    if (screen.width >= 800) {
+        canvas.style.display = 'block';
+    } else {
+        canvas.style.display = 'none';
+    }
+});
+
 mainVideo.addEventListener('loadeddata', () => {
     mainVideo.play();
 });
@@ -85,7 +95,7 @@ const detectAllPoints = async () => {
 
     mainVideo.style.display = 'block';
     
-    if(window.innerWidth >= 600){
+    if(screen.width >= 800){
       canvas.style.display = 'block'
     }
     
